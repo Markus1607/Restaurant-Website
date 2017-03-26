@@ -1,0 +1,519 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700')
+
+//variables
+$font-family: 'Roboto', sans-serif
+$cake-background: #F6F5F3
+$dark: #545454
+$overlay-pancakes: rgba(0,0,0,0.3)
+
+//global
+*
+  box-sizing: border-box
+body
+  font-family: $font-family
+.btn
+  padding: 10px 20px 10px 20px
+  background: rgba(0,0,0,0.5)
+  font-weight: bold
+  color: #fff
+  border: 1px solid #fff
+.container-fluid
+  width: 100%
+.container
+  width: 80%
+  margin: 0 auto
+
+.overlay
+	position: relative
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+
+
+.overlay-pancakes
+	background: $overlay-pancakes
+	padding: 100px 40px
+
+
+//===================================================
+// HEADER STYLES
+//===============================
+.header
+  border: 1px solid #000
+  //background: #eee
+  width: 100%
+  height: 100vh
+  background: url("../img/headerbg.jpg") center center no-repeat
+  background-size: cover
+  background-attachment: fixed
+
+
+  &-content
+    text-align: center
+
+  &-message
+    max-width: 400px
+    margin: 0 auto
+    color: #fff
+    font-weight: 300px
+    word-spacing: 3px
+    line-height: 1.5
+    font-size: 16px
+    text-shadow: 2px 2px 3px #000
+
+  &-title
+    font-size: 71px
+    letter-spacing: 2
+    margin-top: 15vh
+    color: #fff
+    text-shadow: 2px 2px 2px #000
+		font-weight: 500
+
+  &-line
+    margin-bottom: 40px
+    width: 233px
+
+  &-btn
+    margin-top: 40px
+    padding: 20px 57px 20px 57px
+    &:hover
+      cursor: pointer
+
+.nav
+  background: rgba(0,0,0,0.6)
+
+.nav-menu
+	display: none
+
+.nav > .container
+  display: flex
+  justify-content: space-around
+  color: #fff
+
+  .nav-links
+    align-self: center
+
+  .nav-links li
+    display: inline-block
+    color: #fff
+    font-weight: bold
+    font-size: 13px
+    padding: 0px 20px 0px 20px
+    &::after
+      content: ""
+      position: absolute
+      top: 36px
+      margin-left: 10px
+      margin-right: 10px
+      width: 4px
+      height: 4px
+      border-radius: 50%
+      background: #fff
+
+    a
+      text-decoration: none
+      color: #fff
+      text-transform: uppercase
+
+  .nav-social
+    align-self: center
+    padding: 10px 0px 10px 0
+    border: 1px solid #fff
+    .nav-social-icons
+      width: 50px
+      color: #fff
+      padding-left: 20px
+      padding-right: 20px
+      &:hover
+        cursor: pointer
+      &:nth-child(2), &:nth-child(3)
+        padding-left: 0
+
+
+
+
+
+//============================================
+
+//Cake Section
+
+//==================================================
+.cake
+	background: url("../img/pattern.png") center center repeat
+	background-size: cover
+	padding-top: 80px
+	padding-bottom: 80px
+	margin-bottom: -17px
+.cake > .container
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: center
+
+
+	.cake-content
+		text-align: center
+		padding-right: 140px
+
+		&-title
+			font-size: 56px
+			margin-bottom: 8px
+			color: $dark
+			text-shadow: 1px 1px 3px #000
+
+		&-sub
+			font-size: 17px
+			text-transform: uppercase
+			font-weight: 400
+
+
+
+		&-message
+			font-size: 15px
+			padding: 14px 19px
+			font-weight: 200
+
+
+		&-chef-name
+			font-size: 24px
+			font-weight: 400
+
+
+		&-avatar
+			margin: 0 auto
+			display: flex
+			align-items: center
+			justify-content: space-around
+			padding: 1px 94px
+
+
+	.cake-image
+		display: inline-block
+		border: 5px solid #fff
+		box-shadow: 0px 0px 10px #eee, 0px 0px 20px #000
+
+
+
+.pancakes
+	background: url("../img/breading.jpg") center center no-repeat
+	background-size: cover
+
+	.container
+		display: flex
+		justify-content: center
+		//align-items: center
+		align-content: center
+	
+		.pancakes-image
+      height: 420px
+	
+		.pancakes-image
+			width: 400px
+
+		.pancakes-image
+			margin: 0px 0px
+			margin-right: 2px
+			flex-shrink: 0
+
+
+			img
+				width: 100%
+				height: 100%
+				box-shadow: 0px 0px 3px #000
+
+		.pan-desc
+
+			&-title
+				font-size: 35px
+				color: $dark
+				text-shadow: 1px 1px 3px #fff
+
+			&-wrapper
+				background: #eee
+				padding: 30px 40px
+				width: 500px
+
+
+			&-gallery > .slider
+				padding-left: 50px
+				//background: rgba(255,255,255,0.4)
+				padding-bottom: 81px
+
+
+				.dot > img
+					position: relative
+					top: 34px
+					width: 80px
+					height: 80px
+					border: 1px solid #eee
+					border-radius: 50%
+					margin-top: 10px
+
+					&:nth-child(2)
+						margin: 0px 10px
+
+				.prev, .next
+					cursor: pointer
+					color: white
+					font-weight: bold
+					font-size: 18px
+					transition: 0.6s ease
+					border-radius: 0 3px 3px 0
+
+				.prev
+					margin-right: 30px
+				.next
+					margin-left: 30px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//====================
+// Media-queries
+//===================
+
+
+
+//=================================
+//Navbar Media Queries
+//================================
+@media screen and (max-width: 1203px)
+
+  .nav
+    background: rgba(0,0,0,0.6)
+  .nav > .container
+    display: flex
+    justify-content: space-around
+    color: #fff
+
+    .nav-links
+      align-self: center
+
+    .nav-links li
+      display: none
+
+		.nav-menu
+			display: block
+
+		.nav-menu > span
+			width: 50px
+			height: 3px
+			top: 35px
+			//left: 10px
+			margin-left: 50px
+			position: absolute
+			text-align: center
+			background: #fff
+			&:hover
+				cursor: pointer
+
+			&:before, &:after
+				position: absolute
+				content: ""
+				width: 50px
+				height: 3px
+				background: #fff
+				&:hover
+					cursor: pointer
+
+			&:before
+				top: -13px
+				left: 0px
+			&:after
+				top: 13px
+				left: 0px
+
+
+//==========================
+// cake section media queries
+//=====================
+@media screen and (max-width: 1057px)
+	.cake > .container
+		flex-direction: column
+		justify-content: center
+
+		.cake-content
+			padding-right: 0px
+			width: 70%
+			margin-bottom: 25px
+
+
+
+
+
+
+@media screen and (max-width: 753px)
+	.nav
+		.nav-social
+			display: none
+
+	.cake-image
+		width: 300px
+		height: 100%
+
+		img
+			width: 100%
+			height: 100%
+
+
+//=======================
+//Art of cake section
+//==========================
+
+
+
+
+//===========================================
+// Pancake section media queries
+//==========================================
+@media screen and (max-width: 753px )
+	.pancakes
+		background: url("../img/breading.jpg") center center no-repeat
+		background-size: cover
+
+		.container
+			flex-wrap: wrap
+			
+
+
+			.pancakes-image
+				margin: 0px 0px
+				margin-right: 2px
+				width: 350px
+				height: 300px
+				margin-bottom: 5px
+		
+			.pan-desc
+
+				&-title
+					font-size: 30px
+					color: $dark
+					text-shadow: 1px 1px 3px #fff
+
+				&-wrapper
+					background: #eee
+					padding: 30px 40px
+					width: 350px
+
+
+				&-gallery > .slider
+					padding-left: 50px
+					//background: rgba(255,255,255,0.4)
+					padding-bottom: 81px
+
+
+					.dot > img
+						display: none
+						position: relative
+						top: 34px
+						width: 40px
+						height: 40px
+						border: 1px solid #eee
+						border-radius: 50%
+						margin-top: 10px
+
+						&:nth-child(2)
+							margin: 0px 10px
+
+					.prev, .next
+						display: none
+						cursor: pointer
+						color: white
+						font-weight: bold
+						font-size: 18px
+						transition: 0.6s ease
+						border-radius: 0 3px 3px 0
+
+					.prev
+						margin-right: 30px
+					.next
+						margin-left: 30px
+			
+			
+@media screen and (max-width: 956px )
+	.pancakes
+		background: url("../img/breading.jpg") center center no-repeat
+		background-size: cover
+
+		.container
+			flex-wrap: wrap
+			
+			.pancakes-image
+				margin: 0px 0px
+				margin-right: 2px
+				width: 460px
+				height: 400px
+				margin-bottom: 5px
+		
+			.pan-desc
+
+				&-title
+					font-size: 30px
+					color: $dark
+					text-shadow: 1px 1px 3px #fff
+
+				&-wrapper
+					background: #eee
+					padding: 30px 40px
+					width: 460px
+
+
+				&-gallery > .slider
+					padding-left: 50px
+					//background: rgba(255,255,255,0.4)
+					padding-bottom: 81px
+
+
+					.dot > img
+						display: none
+						position: relative
+						top: 34px
+						width: 40px
+						height: 40px
+						border: 1px solid #eee
+						border-radius: 50%
+						margin-top: 10px
+
+						&:nth-child(2)
+							margin: 0px 10px
+
+					.prev, .next
+						display: none
+						position: relative
+						top: 50px
+						cursor: pointer
+						color: white
+						font-weight: bold
+						font-size: 18px
+						transition: 0.6s ease
+						border-radius: 0 3px 3px 0
+
+					.prev
+						margin-right: 30px
+					.next
+						margin-left: 30px
+			
+
+
+
+		
+			
